@@ -1,0 +1,34 @@
+---
+controller_hostname: '{{ vault_controller_hostname }}'
+controller_username: "{{ vault_controller_username }}"
+controller_password: "{{ vault_controller_password }}"
+controller_validate_certs: false
+controller_request_timeout: 60
+
+vmware_username: "{{ vault_vmware_username }}"
+vmware_password: "{{ vault_vmware_password }}"
+vmware_vcenter_url: "{{ vault_vmware_vcenter_url }}"
+
+github_username: "{{ vault_github_username }}"
+github_password: "{{ vault_github_password }}"
+
+### Not used at the moment
+ah_host: ''
+ah_username: "{{ vault_ah_user }}"
+ah_password: "{{ vault_ah_pass }}"
+ah_token: "{{ vault_ah_token }}"
+ah_path_prefix: 'galaxy'
+ah_validate_certs: false
+
+ee_registry_username: "{{ ah_username }}"
+ee_registry_password: "{{ ah_password }}"
+ee_registry_dest: "{{ ah_host }}"
+
+ee_base_registry: "{{ ah_host }}"
+ee_base_registry_username: "{{ ah_username }}"
+ee_base_registry_password: "{{ ah_password }}"
+
+machine_username: "{{ vault_machine_username }}"
+machine_password: "{{ vault_machine_password }}"
+
+redhat_hub_token: "{{ vault_redhat_hub_token }}"

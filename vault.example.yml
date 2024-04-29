@@ -1,0 +1,17 @@
+vault_redhat_hub_token: << Really long token >>
+vault_vmware_username: "<<username>>@<<vsphere.local>>"
+vault_vmware_password: <<password>>
+vault_vmware_vcenter_url: "<<vcenter_url (leave off https://)>>"
+
+vault_controller_hostname: https://aap-aap.apps.<< openshift instance >>
+vault_controller_username: admin
+vault_controller_password: <<password>>
+
+vault_password: <<password>>
+
+vault_ah_user: admin
+vault_ah_pass: <<password>>
+vault_ah_token: <<token>>
+
+vault_machine_username: admin
+vault_machine_password: <<password>>

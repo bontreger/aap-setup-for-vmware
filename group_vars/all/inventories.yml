@@ -1,0 +1,6 @@
+---
+controller_inventories:
+  - name: VMware Inventory
+    description: VMware VM inventory
+    organization: Default
+    

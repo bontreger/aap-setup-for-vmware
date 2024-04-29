@@ -1,0 +1,15 @@
+---
+controller_inventory_sources:
+  - name: vmware-vms
+    organization: Default
+    source: vmware
+    inventory: VMware Inventory
+    credential: vCenter Inventory User
+    overwrite: true
+    overwrite_vars: true
+    update_on_launch: false
+    update_cache_timeout: 0
+    execution_environment: vmware-ee
+    source_vars: 
+      hostnames:
+        - config.name

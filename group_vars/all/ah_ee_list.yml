@@ -1,0 +1,28 @@
+---
+ee_list:
+  - name: "vmware-ee"
+    pull: always
+    dependencies:
+      galaxy:
+        collections:
+          - name: infra.controller_configuration
+          - name: infra.ah_configuration
+          - name: infra.ee_utilities
+          - name: awx.awx
+          - name: containers.podman
+          - name: community.windows
+          - name: community.general
+          - name: community.vmware
+          - name: vmware.vmware_rest
+      python:
+        - pywinrm
+        - python-dateutil
+        - awxkit
+        - pyvmomi
+
+ee_base_image: "registry.redhat.io/ansible-automation-platform-24/ee-supported-rhel8:latest"
+ee_image_push: false
+ee_prune_images: false
+ee_create_ansible_config: false
+ee_pull_collections_from_hub: false
+ee_create_controller_def: false

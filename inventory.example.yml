@@ -1,0 +1,15 @@
+---
+all:
+  children:
+    automationcontroller:
+      hosts:
+        control:
+          ansible_host: "<<controller>>"
+    automationhub:
+      hosts:
+        hub:
+          ansible_host: "<<automation hub>>"
+    eventdrivencontroller:
+      hosts:
+        eda:
+          ansible_host: "<<eda controller>>"
