@@ -13,3 +13,11 @@ controller_inventory_sources:
     source_vars: 
       hostnames:
         - config.name
+      properties: ["name", "config.cpuHotAddEnabled", "config.cpuHotRemoveEnabled", "config.instanceUuid", "config.hardware.numCPU", "config.template", "config.name", "config.uuid", "guest.hostName", "guest.ipAddress", "guest.guestId", "guest.guestState", "runtime.maxMemoryUsage", "customValue", "summary.runtime.powerState", "config.guestId", "parent"]
+      keyed_groups:
+        - key: "config.guestID"
+          separator: ''
+        - key: "summary.runtime.powerState"
+          separator: ''
+        - key: parent
+          separator: ''
