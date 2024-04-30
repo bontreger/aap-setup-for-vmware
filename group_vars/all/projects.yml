@@ -1,0 +1,13 @@
+controller_configuration_projects_async_delay: 5
+controller_projects:
+  - name: VMware ESXI Inventory
+    description: ESXI Inventory Project
+    organization: Default
+    scm_type: git
+    scm_url: "https://github.com/bontreger/aap-setup-for-vmware.git"
+    scm_branch: "main"
+    scm_clean: true
+    scm_update_on_launch: true
+    scm_credential: github_credential
+    update_project: true
+    wait: true

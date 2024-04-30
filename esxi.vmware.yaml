@@ -1,0 +1,9 @@
+---
+plugin: community.vmware.vmware_host_inventory
+strict: false
+hostname: "{{ vmware_vcenter_url }}"
+username: "{{ vmware_username }}"
+password: "{{ vmware_password }}"
+validate_certs: false
+with_tags: true
+with_path: true

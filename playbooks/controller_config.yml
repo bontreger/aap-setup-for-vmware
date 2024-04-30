@@ -13,6 +13,10 @@
       ansible.builtin.include_role:
         name: infra.controller_configuration.credentials
 
+    - name: Create Projects
+      ansible.builtin.include_role:
+        name: infra.controller_configuration.projects
+        
     - name: Create inventories
       ansible.builtin.include_role:
         name: infra.controller_configuration.inventories

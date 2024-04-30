@@ -2,4 +2,4 @@
 controller_execution_environments:
   - name: "vmware-ee"
     # Placeholder image until EE builds are part of the automation
-    image: quay.io/ansible/awx-ee
+    image: quay.io/rhn_gps_rbontreg/vmware_ee:latest

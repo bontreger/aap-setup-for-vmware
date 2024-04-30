@@ -1,6 +1,8 @@
 ---
 controller_inventories:
-  - name: VMware Inventory
+  - name: VMware VM Inventory
     description: VMware VM inventory
     organization: Default
-    
+  - name: VMware ESXI Inventory
+    description: VMware ESXI inventory
+    organization: Default
